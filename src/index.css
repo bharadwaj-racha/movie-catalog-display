@@ -1,13 +1,148 @@
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #f9f9f9;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Header {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+.App {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.SearchBar {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.SearchBar input[type="search"] {
+  width: 100%;
+  padding: 20px;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+}
+
+.SearchBar input[type="search"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.MovieList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.MovieItem {
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.MovieItem:hover {
+  transform: scale(1.1);
+}
+
+.MovieItem img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.MovieItem h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.FilterOptions {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.FilterOptions select {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.FilterOptions input[type="range"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.FilterOptions button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.FilterOptions button:hover {
+  background-color: #3e8e41;
+}
+
+.FavoriteMovies {
+  margin-top: 20px;
+}
+
+.FavoriteMovies ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.FavoriteMovies li {
+  margin-bottom: 20px;
+}
+
+.FavoriteMovies img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.FavoriteMovies h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.Footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  clear: both;
 }
